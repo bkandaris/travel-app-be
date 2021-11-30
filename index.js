@@ -1,6 +1,7 @@
 const express = require('express');
-const mongoose = require('mongoose');
 const dotenv = require('dotenv');
+const mongoose = require('mongoose');
+
 // CLUSTER 1 - Mongodb
 const app = express();
 const pinRoute = require('./routes/pins');
