@@ -8,7 +8,7 @@ const userRoute = require('./routes/users');
 
 const cors = require('cors');
 app.use(cors());
-
+dotenv.config();
 app.use(express.json());
 
 const PORT = process.env.PORT || 5000;
@@ -25,7 +25,6 @@ mongoose
 app.use('/api/users', userRoute);
 app.use('/api/pins', pinRoute);
 
-app.listen(5000, () => {
-  console.log(`listening on ${PORT}`);
-  console.log('port', PORT);
+app.listen(PORT, () => {
+  console.log(`backend running on ${PORT}`);
 });
