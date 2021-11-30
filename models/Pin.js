@@ -18,10 +18,10 @@ const PinSchema = new mongoose.Schema(
       min: 3,
     },
     rating: {
-      type: String,
+      type: Number,
       required: true,
-      min: 3,
-      max: 10,
+      min: 0,
+      max: 5,
     },
     lat: {
       type: Number,
