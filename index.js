@@ -2,7 +2,7 @@ const express = require('express');
 const dotenv = require('dotenv');
 const mongoose = require('mongoose');
 
-// CLUSTER 1 - Mongodb
+// CLUSTER 0 - Mongodb
 const app = express();
 const pinRoute = require('./routes/pins');
 const userRoute = require('./routes/users');
