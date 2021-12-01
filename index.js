@@ -6,7 +6,6 @@ const mongoose = require('mongoose');
 const app = express();
 const pinRoute = require('./routes/pins');
 const userRoute = require('./routes/users');
-
 const cors = require('cors');
 app.use(cors());
 app.use(express.json());
@@ -27,5 +26,5 @@ app.use('/api/users', userRoute);
 app.use('/api/pins', pinRoute);
 
 app.listen(PORT, () => {
-  console.log(`backend running on ${PORT}`);
+  console.log(`backend running on port: ${PORT}`);
 });
